@@ -6,6 +6,10 @@
 
 `$ ocamlbuild -package compiler-libs.common addone_ppx.native`
 
+- bytecode build ppx
+
+`$ ocamlc -I +compiler-libs ocamlcommon.cma ppx_test_simple.ml -o ppx_test_simple`
+
 - apply ppx
 
 `$ ocamlc -ppx ./path_to_the_compiled_ppx test.ml`
